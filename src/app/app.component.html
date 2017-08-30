@@ -1,0 +1,11 @@
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    <h2 (click)="updateToDb(item)">{{item.username}}</h2>
+  </li>
+</ul>
+<input type="text" placeholder="new_key" [(ngModel)]="model.username"/>
+<input type="text" placeholder="new_value" [(ngModel)]="model.password"/>
+<button (click)="addToDb()">{{btn_Name}}</button>
+
+
+
